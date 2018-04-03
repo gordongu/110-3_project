@@ -7,5 +7,9 @@ namespace WanderList.Models
 {
     public class User
     {
+        public string UserName { get; set; } //varchar
+        public string Password { get; set; } //varchar
+        Location[] SavedLocations { get; set; } //binary()
+        Location[] ViewedArrays { get; set; } //binary()     
     }
 }
