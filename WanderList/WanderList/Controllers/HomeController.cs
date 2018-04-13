@@ -22,9 +22,9 @@ namespace WanderList.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Discover()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Time to find new places to go!";
 
             return View();
         }
