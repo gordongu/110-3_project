@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ascended Peasant\\Source\\Repos\\110-3_project\\WanderList\\WanderList\\WanderList.csproj",
+      "projectUniqueName": "C:\\Users\\Ascended Peasant\\source\\repos\\110-3_project\\WanderList\\WanderList\\WanderList.csproj",
       "projectName": "WanderList",
-      "projectPath": "C:\\Users\\Ascended Peasant\\Source\\Repos\\110-3_project\\WanderList\\WanderList\\WanderList.csproj",
+      "projectPath": "C:\\Users\\Ascended Peasant\\source\\repos\\110-3_project\\WanderList\\WanderList\\WanderList.csproj",
       "packagesPath": "C:\\Users\\Ascended Peasant\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ascended Peasant\\Source\\Repos\\110-3_project\\WanderList\\WanderList\\obj\\",
+      "outputPath": "C:\\Users\\Ascended Peasant\\source\\repos\\110-3_project\\WanderList\\WanderList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
