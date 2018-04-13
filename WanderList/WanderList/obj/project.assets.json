@@ -12536,23 +12536,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gordon\\.nuget\\packages\\": {},
+    "C:\\Users\\Ascended Peasant\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gordon\\source\\repos\\Wanderlist\\WanderList\\WanderList\\WanderList.csproj",
+      "projectUniqueName": "C:\\Users\\Ascended Peasant\\source\\repos\\110-3_project\\WanderList\\WanderList\\WanderList.csproj",
       "projectName": "WanderList",
-      "projectPath": "C:\\Users\\Gordon\\source\\repos\\Wanderlist\\WanderList\\WanderList\\WanderList.csproj",
-      "packagesPath": "C:\\Users\\Gordon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gordon\\source\\repos\\Wanderlist\\WanderList\\WanderList\\obj\\",
+      "projectPath": "C:\\Users\\Ascended Peasant\\source\\repos\\110-3_project\\WanderList\\WanderList\\WanderList.csproj",
+      "packagesPath": "C:\\Users\\Ascended Peasant\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ascended Peasant\\source\\repos\\110-3_project\\WanderList\\WanderList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Gordon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ascended Peasant\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
