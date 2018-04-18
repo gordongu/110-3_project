@@ -9,25 +9,25 @@ C:\Users\Gordon\source\repos\WanderList\WanderList\bin\Debug\netcoreapp2.0\Wande
 C:\Users\Gordon\source\repos\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.pdb
 C:\Users\Gordon\source\repos\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.dll
 C:\Users\Gordon\source\repos\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.pdb
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\bin\Debug\netcoreapp2.0\WanderList.deps.json
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\bin\Debug\netcoreapp2.0\WanderList.runtimeconfig.json
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\bin\Debug\netcoreapp2.0\WanderList.runtimeconfig.dev.json
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\bin\Debug\netcoreapp2.0\WanderList.dll
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\bin\Debug\netcoreapp2.0\WanderList.pdb
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\obj\Debug\netcoreapp2.0\WanderList.csprojResolveAssemblyReference.cache
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\obj\Debug\netcoreapp2.0\WanderList.csproj.CoreCompileInputs.cache
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\obj\Debug\netcoreapp2.0\WanderList.AssemblyInfoInputs.cache
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\obj\Debug\netcoreapp2.0\WanderList.AssemblyInfo.cs
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\obj\Debug\netcoreapp2.0\WanderList.dll
+C:\Users\Gordon\source\repos\Wanderlist\Wanderlist\WanderList\obj\Debug\netcoreapp2.0\WanderList.pdb
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.deps.json
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.runtimeconfig.json
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.runtimeconfig.dev.json
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.dll
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.pdb
-C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.csprojResolveAssemblyReference.cache
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.csproj.CoreCompileInputs.cache
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.AssemblyInfoInputs.cache
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.AssemblyInfo.cs
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.dll
 C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.pdb
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.deps.json
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.runtimeconfig.json
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.runtimeconfig.dev.json
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.dll
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\bin\Debug\netcoreapp2.0\WanderList.pdb
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.csprojResolveAssemblyReference.cache
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.csproj.CoreCompileInputs.cache
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.AssemblyInfoInputs.cache
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.AssemblyInfo.cs
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.dll
-C:\Users\Ascended Peasant\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.pdb
+C:\Users\Darian\Source\Repos\110-3_project\WanderList\WanderList\obj\Debug\netcoreapp2.0\WanderList.csprojResolveAssemblyReference.cache
