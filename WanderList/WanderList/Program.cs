@@ -27,15 +27,14 @@ namespace WanderList
 
             try
             {
-                con.Open();
-                SqlCommand create = new SqlCommand(createScript, con);
-                create.ExecuteNonQuery();
-                SqlCommand insert = new SqlCommand(insertScript, con);
-                insert.ExecuteNonQuery();
+                //con.Open();
+                //SqlCommand create = new SqlCommand(createScript, con);
+                //create.ExecuteNonQuery();
+                //SqlCommand insert = new SqlCommand(insertScript, con);
+                //insert.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                int i = 0;
             }
             finally
             {
