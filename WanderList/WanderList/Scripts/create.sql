@@ -11,11 +11,12 @@
 --    EXEC ('CREATE SCHEMA [Wanderlist] AUTHORIZATION [dbo]')
 --END
 
-USE Wanderlist ;
-
+USE Wanderlist;
 -- -----------------------------------------------------
 -- Table `Wanderlist`.`Location`
 -- -----------------------------------------------------
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name='Wanderlist.Location')
+BEGIN
 CREATE TABLE [Wanderlist.Location] (
   [location_id] INT NOT NULL,
   [name] VARCHAR(45) NOT NULL,
@@ -25,11 +26,14 @@ CREATE TABLE [Wanderlist.Location] (
   PRIMARY KEY ([location_id]),
   CONSTRAINT [location_id_UNIQUE] UNIQUE ([location_id] ASC))
 ;
+END
 
 
 -- -----------------------------------------------------
 -- Table `Wanderlist`.`User`
 -- -----------------------------------------------------
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name='Wanderlist.User')
+BEGIN
 CREATE TABLE [Wanderlist.User] (
   [user_id] INT NOT NULL,
   [username] VARCHAR(45) NOT NULL,
@@ -37,11 +41,14 @@ CREATE TABLE [Wanderlist.User] (
   PRIMARY KEY ([user_id]),
   CONSTRAINT [user_id_UNIQUE] UNIQUE  ([user_id] ASC))
 ;
+END
 
 
 -- -----------------------------------------------------
 -- Table `Wanderlist`.`Saved_Location`
 -- -----------------------------------------------------
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name='Wanderlist.Saved_Location')
+BEGIN
 CREATE TABLE [Wanderlist.Saved_Location] (
   [saved_location_id] INT NOT NULL,
   [user_id] INT NOT NULL,
@@ -63,24 +70,25 @@ CREATE TABLE [Wanderlist.Saved_Location] (
 
 CREATE INDEX [fk_user_id_idx] ON [Wanderlist.Saved_Location] ([user_id] ASC);
 CREATE INDEX [fk_location_id_idx] ON [Wanderlist.Saved_Location] ([location_id] ASC);
-
+END
 
 -- -----------------------------------------------------
 -- Table `Wanderlist`.`Viewed_Location`
 -- -----------------------------------------------------
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name='Wanderlist.Viewed_Location')
+BEGIN
 CREATE TABLE [Wanderlist.Viewed_Location] (
   [viewed_location_id] INT NOT NULL,
   [user_id] INT NOT NULL,
   [location_id] INT NOT NULL,
   PRIMARY KEY ([viewed_location_id]),
-  CONSTRAINT [viewed_location_id_UNIQUE] UNIQUE  ([viewed_location_id] ASC)
- ,
-  CONSTRAINT [fk_user_id]
+  CONSTRAINT [viewed_location_id_UNIQUE] UNIQUE  ([viewed_location_id] ASC),
+  CONSTRAINT [fk_user_id_viewed]
     FOREIGN KEY ([user_id])
     REFERENCES [Wanderlist.User] ([user_id])
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT [fk_location_id]
+  CONSTRAINT [fk_location_id_viewed]
     FOREIGN KEY ([location_id])
     REFERENCES [Wanderlist.Location] ([location_id])
     ON DELETE NO ACTION
@@ -89,7 +97,7 @@ CREATE TABLE [Wanderlist.Viewed_Location] (
 
 CREATE INDEX [fk_user_id_idx] ON [Wanderlist.Viewed_Location] ([user_id] ASC);
 CREATE INDEX [fk_location_id_idx] ON [Wanderlist.Viewed_Location] ([location_id] ASC);
-
+END
 
 /* SET SQL_MODE=@OLD_SQL_MODE; */
 /* SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS; */
