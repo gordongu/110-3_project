@@ -19,15 +19,19 @@ namespace WanderList
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-            FileInfo file = new FileInfo(@"scripts\create.sql");
+            FileInfo createFile = new FileInfo(@"scripts\create.sql");
+            FileInfo insertFile = new FileInfo(@"scripts\insert.sql");
 
-            string script = file.OpenText().ReadToEnd();
+            string createScript = createFile.OpenText().ReadToEnd();
+            string insertScript = insertFile.OpenText().ReadToEnd();
 
             try
             {
                 con.Open();
-                SqlCommand create = new SqlCommand(script, con);
+                SqlCommand create = new SqlCommand(createScript, con);
                 create.ExecuteNonQuery();
+                SqlCommand insert = new SqlCommand(insertScript, con);
+                insert.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
