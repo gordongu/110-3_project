@@ -36,8 +36,8 @@ namespace WanderList.Controllers
 
 		public IActionResult SignUp()
 		{
-			return View();
-		}
+            return View(); //"~/Views/Users/Create.cshtml"
+        }
 
         public IActionResult Error()
         {
