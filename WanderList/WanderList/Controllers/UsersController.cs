@@ -11,9 +11,9 @@ namespace WanderList.Controllers
 {
     public class UsersController : Controller
     {
-        private readonly UserContext _context;
+        private readonly WanderListContext _context;
 
-        public UsersController(UserContext context)
+        public UsersController(WanderListContext context)
         {
             _context = context;
         }
@@ -61,7 +61,7 @@ namespace WanderList.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(User);
+            return View(user);
         }
 
         // GET: Users/Edit/5

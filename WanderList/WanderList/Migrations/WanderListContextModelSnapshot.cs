@@ -10,11 +10,10 @@ using WanderList.Models;
 
 namespace WanderList.Migrations
 {
-    [DbContext(typeof(UserContext))]
-    [Migration("20180420195418_Initial")]
-    partial class Initial
+    [DbContext(typeof(WanderListContext))]
+    partial class WanderListContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
