@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20180420201011_Locations.cs" />
+    <Compile Remove="Migrations\20180420201011_Locations.Designer.cs" />
+    <Compile Remove="Migrations\20180420202024_UserLocations.cs" />
+    <Compile Remove="Migrations\20180420202024_UserLocations.Designer.cs" />
+    <Compile Remove="Migrations\20180420204540_LocationMig.cs" />
+    <Compile Remove="Migrations\20180420204540_LocationMig.Designer.cs" />
+    <Compile Remove="Migrations\20180421012952_LocationMig.cs" />
+    <Compile Remove="Migrations\20180421012952_LocationMig.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
