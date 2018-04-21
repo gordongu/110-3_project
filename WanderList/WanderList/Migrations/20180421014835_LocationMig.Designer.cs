@@ -11,9 +11,10 @@ using WanderList.Models;
 namespace WanderList.Migrations
 {
     [DbContext(typeof(WanderListContext))]
-    partial class WanderListContextModelSnapshot : ModelSnapshot
+    [Migration("20180421014835_LocationMig")]
+    partial class LocationMig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
