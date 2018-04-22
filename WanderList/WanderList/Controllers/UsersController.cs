@@ -59,7 +59,7 @@ namespace WanderList.Controllers
             {
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Login", "", new { area = "" });
             }
             return View(user);
         }
