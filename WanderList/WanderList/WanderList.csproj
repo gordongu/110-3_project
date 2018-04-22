@@ -13,6 +13,8 @@
     <Compile Remove="Migrations\20180420204540_LocationMig.Designer.cs" />
     <Compile Remove="Migrations\20180421012952_LocationMig.cs" />
     <Compile Remove="Migrations\20180421012952_LocationMig.Designer.cs" />
+    <Compile Remove="Migrations\20180422165900_InsertLocs.cs" />
+    <Compile Remove="Migrations\20180422165900_InsertLocs.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
