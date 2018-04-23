@@ -184,6 +184,7 @@ namespace WanderList.Controllers
             Location loc = _context.Location.Where(x => x.LocationId == r.Next(bits.Length)).FirstOrDefault();
             ViewData["Location"] = loc;
 
+
             //google key AIzaSyDNbfgtL8yX8SQDMaL2GkV62Onl9b1vrF8 
             return View();
         }
