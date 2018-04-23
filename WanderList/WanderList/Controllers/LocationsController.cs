@@ -15,6 +15,7 @@ namespace WanderList.Controllers
 
         public LocationsController(WanderListContext context)
         {
+
             _context = context;
         }
 
