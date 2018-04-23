@@ -59,7 +59,7 @@ namespace WanderList.Controllers
             {
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Login", "", new { area = "" });
+                return RedirectToAction("Login");
             }
             return View(user);
         }
@@ -147,6 +147,31 @@ namespace WanderList.Controllers
         private bool UserExists(int id)
         {
             return _context.User.Any(e => e.UserId == id);
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(User usr)
+        {
+            if (ModelState.IsValid)
+            {
+                var obj = _context.User.Where(a => a.UserName.Equals(usr.UserName) && a.Password.Equals(usr.Password)).FirstOrDefault();
+                if (obj != null)
+                {                  
+                    return RedirectToAction("Dashboard", new { id = obj });
+                }
+            }
+            return View(usr);
+        }
+
+        public ActionResult DashBoard(int id)
+        {
+                return View();
         }
     }
 }
