@@ -6,6 +6,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using WanderList.Models;
 
@@ -164,7 +165,9 @@ namespace WanderList.Controllers
             {
                 var obj = _context.User.Where(a => a.UserName.Equals(usr.UserName) && a.Password.Equals(usr.Password)).FirstOrDefault();
                 if (obj != null)
-                {                  
+                {
+					HttpContext.Session.SetString("UserID", usr.UserId.ToString());
+					HttpContext.Session.SetString("UserName", usr.UserName);
                     return RedirectToAction("Dashboard", new { id = obj.UserId });
                 }
             }
@@ -173,17 +176,19 @@ namespace WanderList.Controllers
 
         public ActionResult Dashboard(int id)
         {
-            User usr = _context.User.Where(x => x.UserId == id).FirstOrDefault();
-            ViewData["UserObj"] = usr;
+			if (HttpContext.Session.GetString("UserID") != null)
+			{
+				User usr = _context.User.Where(x => x.UserId == id).FirstOrDefault();
+				ViewData["UserObj"] = usr;
 
-            BitArray b = new BitArray(new int[] { usr.ViewedLocs });
-            bool[] bits = new bool[b.Count];
-            b.CopyTo(bits, 0);
+				BitArray b = new BitArray(new int[] { usr.ViewedLocs });
+				bool[] bits = new bool[b.Count];
+				b.CopyTo(bits, 0);
 
-            var r = new Random();
-            Location loc = _context.Location.Where(x => x.LocationId == r.Next(bits.Length)).FirstOrDefault();
-            ViewData["Location"] = loc;
-
+				var r = new Random();
+				Location loc = _context.Location.Where(x => x.LocationId == r.Next(bits.Length)).FirstOrDefault();
+				ViewData["Location"] = loc;
+			}
 
             //google key AIzaSyDNbfgtL8yX8SQDMaL2GkV62Onl9b1vrF8 
             return View();
