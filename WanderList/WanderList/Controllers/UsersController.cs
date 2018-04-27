@@ -181,12 +181,11 @@ namespace WanderList.Controllers
 				User usr = _context.User.Where(x => x.UserId == id).FirstOrDefault();
 				ViewData["UserObj"] = usr;
 
-				BitArray b = new BitArray(new int[] { usr.ViewedLocs });
-				bool[] bits = new bool[b.Count];
-				b.CopyTo(bits, 0);
-
+				var count = _context.Location.Count();
 				var r = new Random();
-				Location loc = _context.Location.Where(x => x.LocationId == r.Next(bits.Length)).FirstOrDefault();
+				int rInt = r.Next(1, count + 1);
+
+				Location loc = _context.Location.Where(x => x.LocationId == rInt).FirstOrDefault();
 				ViewData["Location"] = loc;
 			}
 
