@@ -11,6 +11,17 @@
 <h2>Discover Locations</h2>
 
 <div class="row">
+    <div class="col-md-2">
+        <form asp-action="Dashboard">
+            <div class="form-group">
+                <input type="submit" value="Yes" class="btn btn-default" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="No" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
 	<div class="col-md-4">
 		<p>
 			@loc.Name
@@ -24,12 +35,8 @@
             @loc.ImageLink
 		</p>
 
-        <img src=@loc.ImageLink />
+        <img src=@loc.ImageLink/>
 
-		<form asp-action="Dashboard">
-			<div class="form-group">
-				<input type="submit" value="Next" class="btn btn-default" />
-			</div>
-		</form>
+        <br />
 	</div>
 </div>
