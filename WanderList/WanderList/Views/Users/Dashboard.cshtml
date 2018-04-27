@@ -10,12 +10,22 @@
 }
 <h2>Discover Locations</h2>
 
-<p>
-    @loc.Name
-    <br />
-    @loc.Address
-    <br />
-    @loc.Rating
-    <br />
-    @loc.Description
-</p>
+<div class="row">
+	<div class="col-md-4">
+		<p>
+			@loc.Name
+			<br />
+			@loc.Address
+			<br />
+			@loc.Rating
+			<br />
+			@loc.Description
+		</p>
+
+		<form asp-action="Dashboard">
+			<div class="form-group">
+				<input type="submit" value="Next" class="btn btn-default" />
+			</div>
+		</form>
+	</div>
+</div>

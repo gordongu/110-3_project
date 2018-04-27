@@ -192,25 +192,5 @@ namespace WanderList.Controllers
             //google key AIzaSyDNbfgtL8yX8SQDMaL2GkV62Onl9b1vrF8 
             return View();
         }
-
-        public ActionResult Next(int locId, int usrId, int count, int currentLoc, bool[] viewed)
-        {
-            ViewData["Count"] = count + 1;
-            viewed[locId] = true;
-
-            BitArray b = new BitArray(viewed);
-            int[] array = new int[1];
-            b.CopyTo(array, 0);
-            User usr = _context.User.Where(x => x.UserId == usrId).FirstOrDefault();
-            usr.ViewedLocs = array[0];
-
-            this.Edit(usrId, usr).RunSynchronously();
-
-            if (count + 1 == 5)
-            {
-                //Redirect to more info
-            }
-            return View("Dashboard");
-        }
     }
 }
