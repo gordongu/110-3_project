@@ -178,20 +178,51 @@ namespace WanderList.Controllers
         {
 			if (HttpContext.Session.GetString("UserID") != null)
 			{
-				User usr = _context.User.Where(x => x.UserId == id).FirstOrDefault();
-				ViewData["UserObj"] = usr;
+				if (_context.SavedLocation.Count() >= 5)
+				{
+					return RedirectToAction("DashboardAlt");
+				}
+				else
+				{
+					User usr = _context.User.Where(x => x.UserId == id).FirstOrDefault();
+					ViewData["UserObj"] = usr;
 
-				var count = _context.Location.Count();
-				var r = new Random();
-				int rInt = r.Next(1, count + 1);
+					var count = _context.Location.Count();
+					var r = new Random();
+					int rInt = r.Next(1, count + 1);
 
-				Location loc = _context.Location.Where(x => x.LocationId == rInt).FirstOrDefault();
-				ViewData["Location"] = loc;
+					Location loc = _context.Location.Where(x => x.LocationId == rInt).FirstOrDefault();
+					ViewData["Location"] = loc;
+				}
 			}
 
             //google key AIzaSyDNbfgtL8yX8SQDMaL2GkV62Onl9b1vrF8 
             return View();
         }
+
+		public ActionResult DashboardAlt()
+		{
+			if (HttpContext.Session.GetString("UserID") != null)
+			{
+				var savLocs = _context.SavedLocation.ToList();
+				Location loc = _context.Location.Where(x => x.LocationId == savLocs[0].LocationId).FirstOrDefault();
+				ViewData["Location1"] = loc;
+
+				loc = _context.Location.Where(x => x.LocationId == savLocs[1].LocationId).FirstOrDefault();
+				ViewData["Location2"] = loc;
+
+				loc = _context.Location.Where(x => x.LocationId == savLocs[2].LocationId).FirstOrDefault();
+				ViewData["Location3"] = loc;
+
+				loc = _context.Location.Where(x => x.LocationId == savLocs[3].LocationId).FirstOrDefault();
+				ViewData["Location4"] = loc;
+
+				loc = _context.Location.Where(x => x.LocationId == savLocs[4].LocationId).FirstOrDefault();
+				ViewData["Location5"] = loc;
+			}
+
+			return View();
+		}
 
 		public ActionResult Like(int locId)
 		{
@@ -221,8 +252,14 @@ namespace WanderList.Controllers
 				viewLoc.UserId = Int32.Parse(HttpContext.Session.GetString("UserID"));
 				viewLoc.LocationId = locId;
 				_context.Add(viewLoc);
+				//_context.SaveChanges();
 			}
 
+			return RedirectToAction("Dashboard");
+		}
+
+		public ActionResult Confirm(int locId)
+		{
 			return RedirectToAction("Dashboard");
 		}
 	}
