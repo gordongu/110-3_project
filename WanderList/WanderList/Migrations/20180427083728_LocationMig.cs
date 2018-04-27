@@ -29,6 +29,7 @@ namespace WanderList.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Address = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
+                    ImageLink = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
                     Rating = table.Column<double>(nullable: false)
                 },

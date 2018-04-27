@@ -11,7 +11,7 @@ using WanderList.Models;
 namespace WanderList.Migrations
 {
     [DbContext(typeof(WanderListContext))]
-    [Migration("20180421014835_LocationMig")]
+    [Migration("20180427083728_LocationMig")]
     partial class LocationMig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,6 +29,8 @@ namespace WanderList.Migrations
                     b.Property<string>("Address");
 
                     b.Property<string>("Description");
+
+                    b.Property<string>("ImageLink");
 
                     b.Property<string>("Name");
 

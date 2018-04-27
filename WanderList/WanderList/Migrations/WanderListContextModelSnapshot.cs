@@ -29,6 +29,8 @@ namespace WanderList.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<string>("ImageLink");
+
                     b.Property<string>("Name");
 
                     b.Property<double>("Rating");
