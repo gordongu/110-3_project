@@ -15,7 +15,8 @@ namespace WanderList.Models
         }
 
         public DbSet<WanderList.Models.User> User { get; set; }
-
         public DbSet<WanderList.Models.Location> Location { get; set; }
-    }
+		public DbSet<WanderList.Models.SavedLocation> SavedLocation { get; set; }
+		public DbSet<WanderList.Models.ViewedLocation> ViewedLocation { get; set; }
+	}
 }

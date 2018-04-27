@@ -192,5 +192,38 @@ namespace WanderList.Controllers
             //google key AIzaSyDNbfgtL8yX8SQDMaL2GkV62Onl9b1vrF8 
             return View();
         }
-    }
+
+		public ActionResult Like(int locId)
+		{
+			if (ModelState.IsValid)
+			{
+				SavedLocation savLoc = new SavedLocation();
+				savLoc.UserId = Int32.Parse(HttpContext.Session.GetString("UserID"));
+				savLoc.LocationId = locId;
+				_context.Add(savLoc);
+				_context.SaveChanges(); // Comment out to not save changes to database
+
+				ViewedLocation viewLoc = new ViewedLocation();
+				viewLoc.UserId = Int32.Parse(HttpContext.Session.GetString("UserID"));
+				viewLoc.LocationId = locId;
+				_context.Add(viewLoc);
+				//_context.SaveChanges();
+			}
+
+			return RedirectToAction("Dashboard");
+		}
+
+		public ActionResult Dislike(int locId)
+		{
+			if (ModelState.IsValid)
+			{
+				ViewedLocation viewLoc = new ViewedLocation();
+				viewLoc.UserId = Int32.Parse(HttpContext.Session.GetString("UserID"));
+				viewLoc.LocationId = locId;
+				_context.Add(viewLoc);
+			}
+
+			return RedirectToAction("Dashboard");
+		}
+	}
 }

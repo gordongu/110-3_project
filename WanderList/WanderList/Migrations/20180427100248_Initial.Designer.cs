@@ -11,8 +11,8 @@ using WanderList.Models;
 namespace WanderList.Migrations
 {
     [DbContext(typeof(WanderListContext))]
-    [Migration("20180427083745_InsertLocs")]
-    partial class InsertLocs
+    [Migration("20180427100248_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,6 +41,20 @@ namespace WanderList.Migrations
                     b.ToTable("Location");
                 });
 
+            modelBuilder.Entity("WanderList.Models.SavedLocation", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("LocationId");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("id");
+
+                    b.ToTable("SavedLocation");
+                });
+
             modelBuilder.Entity("WanderList.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -57,6 +71,20 @@ namespace WanderList.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("WanderList.Models.ViewedLocation", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("LocationId");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("id");
+
+                    b.ToTable("ViewedLocation");
                 });
 #pragma warning restore 612, 618
         }
