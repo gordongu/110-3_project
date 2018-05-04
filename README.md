@@ -4,14 +4,14 @@
 <br/>
  Team Memebers: <br/>
  Sudo Project Manager: <br/>
-    * Daniel Green <br/>
+    - Daniel Green <br/>
  Front End Developers: <br/>
-    * Gayathri Gude <br/>
-    * Joanne Lui <br/>
+    - Gayathri Gude <br/>
+    - Joanne Lui <br/>
  Back End Developers: <br/>
-    * Gordon Gu <br/>
-    * Zack Toelkes <br/>
-    * Darian Valdez <br/>
+    - Gordon Gu <br/>
+    - Zack Toelkes <br/>
+    - Darian Valdez <br/>
 <br/>
 Coding language we used: <br/>
   1. Backend: C# <br/>
@@ -19,12 +19,12 @@ Coding language we used: <br/>
 <br/>
 Coding environment we used <br/>
   Visual Studios <br/>
-    -Visual Studios Community (Free) <br/>
+    - Visual Studios Community (Free) <br/>
 <br/>
 We made: <br/>
-  -A web app <br/>
-    -Not an Android app <br/>
-    -Not an iPhone app <br/>
+  - A web app <br/>
+    - Not an Android app <br/>
+    - Not an iPhone app <br/>
 
 Project Description: <br/>
   Wanderlist is a one-sided Tinder for locations. Meaning, it provides users with randomized location from which they can selection a destination. This process is done having a page on which users are shown an image pertaining to a location, they choose whether they wish to save this location or pass on it, and after five saves they user is taken to a page listing out their saved locations. From here they  can make a selection of one location, and are sent to the necessary contact infromation for that location to set up a visit. <br/>
