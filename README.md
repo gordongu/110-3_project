@@ -23,7 +23,7 @@ Coding environment we used <br/>
 <br/>
 We made: <br/>
   - A web app <br/>
-    - Not an Android app <br/>
+    - Not an Android app <br/> 
     - Not an iPhone app <br/>
 
 Project Description: <br/>
