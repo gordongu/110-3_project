@@ -3,15 +3,15 @@
 ### Project Name: Wanderlist <br/>
 <br/>
  Team Memebers: <br/>
-   Sudo Project Manager: 
-    Daniel Green <br/>
-   Front End Developers: <br/>
-    Gayathri Gude <br/>
-    Joanne Lui <br/>
+ Sudo Project Manager: <br/>
+    * Daniel Green <br/>
+ Front End Developers: <br/>
+    * Gayathri Gude <br/>
+    * Joanne Lui <br/>
  Back End Developers: <br/>
-    Gordon Gu <br/>
-    Zack Toelkes <br/>
-    Darian Valdez <br/>
+    * Gordon Gu <br/>
+    * Zack Toelkes <br/>
+    * Darian Valdez <br/>
 <br/>
 Coding language we used: <br/>
   1. Backend: C# <br/>
