@@ -258,9 +258,12 @@ namespace WanderList.Controllers
 			return RedirectToAction("Dashboard");
 		}
 
-		public ActionResult Confirm(int locId)
+		public void Confirm(int locId)
 		{
-			return RedirectToAction("Dashboard");
+			Location loc = _context.Location.Where(x => x.LocationId == locId).FirstOrDefault();
+			string search = "https://www.google.com/search?q=" + loc.Name;
+
+			Response.Redirect(search);
 		}
 	}
 }
