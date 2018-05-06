@@ -9,7 +9,7 @@ CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
 USE `mydb` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Loccation`
+-- Table `mydb`.`Location`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Location` (
   `location_id` INT NOT NULL,
