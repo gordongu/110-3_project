@@ -8,133 +8,116 @@
 	Location loc3 = ViewData["Location3"] as Location;
 	Location loc4 = ViewData["Location4"] as Location;
 	Location loc5 = ViewData["Location5"] as Location;
+	Location currLoc = loc1;
 	//int count = ViewData["Count"] as int;
 	Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
+
 <h2>Discover Locations</h2>
+<hr />
 
-<div class="row">
-	<div class="col-md-2">
-		<div class="form-group">
-			<a asp-action="Confirm" asp-route-locId="@loc1.LocationId" class="btn btn-default">Select</a>
+<div id="selectCarousel" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img class="img-responsive center-block" src=@loc1.ImageLink />
+			<div class="carousel-caption">
+				<p>
+					@loc1.Name
+					<br />
+					@loc1.Address
+					<br />
+					@loc1.Rating
+					<br />
+					@loc1.Description
+				</p>
+				<div class="form-group">
+					<a asp-action="Confirm" asp-route-locId="@loc1.LocationId" class="btn btn-default">Select</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src=@loc2.ImageLink />
+			<div class="carousel-caption">
+				<p>
+					@loc2.Name
+					<br />
+					@loc2.Address
+					<br />
+					@loc2.Rating
+					<br />
+					@loc2.Description
+				</p>
+				<div class="form-group">
+					<a asp-action="Confirm" asp-route-locId="@loc2.LocationId" class="btn btn-default">Select</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src=@loc3.ImageLink />
+			<div class="carousel-caption">
+				<p>
+					@loc3.Name
+					<br />
+					@loc3.Address
+					<br />
+					@loc3.Rating
+					<br />
+					@loc3.Description
+				</p>
+				<div class="form-group">
+					<a asp-action="Confirm" asp-route-locId="@loc3.LocationId" class="btn btn-default">Select</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src=@loc4.ImageLink />
+			<div class="carousel-caption">
+				<p>
+					@loc4.Name
+					<br />
+					@loc4.Address
+					<br />
+					@loc4.Rating
+					<br />
+					@loc4.Description
+				</p>
+				<div class="form-group">
+					<a asp-action="Confirm" asp-route-locId="@loc4.LocationId" class="btn btn-default">Select</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src=@loc5.ImageLink />
+			<div class="carousel-caption">
+				<p>
+					@loc5.Name
+					<br />
+					@loc5.Address
+					<br />
+					@loc5.Rating
+					<br />
+					@loc5.Description
+				</p>
+				<div class="form-group">
+					<a asp-action="Confirm" asp-route-locId="@loc5.LocationId" class="btn btn-default">Select</a>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="col-md-4">
-		<p>
-			@loc1.Name
-			<br />
-			@loc1.Address
-			<br />
-			@loc1.Rating
-			<br />
-			@loc1.Description
-			<br />
-			@loc1.ImageLink
-		</p>
-
-		<img src=@loc1.ImageLink />
-
-		<br />
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-2">
-		<div class="form-group">
-			<a asp-action="Confirm" asp-route-locId="@loc2.LocationId" class="btn btn-default">Select</a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<p>
-			@loc2.Name
-			<br />
-			@loc2.Address
-			<br />
-			@loc2.Rating
-			<br />
-			@loc2.Description
-			<br />
-			@loc2.ImageLink
-		</p>
-
-		<img src=@loc2.ImageLink />
-
-		<br />
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-2">
-		<div class="form-group">
-			<a asp-action="Confirm" asp-route-locId="@loc3.LocationId" class="btn btn-default">Select</a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<p>
-			@loc3.Name
-			<br />
-			@loc3.Address
-			<br />
-			@loc3.Rating
-			<br />
-			@loc3.Description
-			<br />
-			@loc3.ImageLink
-		</p>
-
-		<img src=@loc3.ImageLink />
-
-		<br />
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-2">
-		<div class="form-group">
-			<a asp-action="Confirm" asp-route-locId="@loc4.LocationId" class="btn btn-default">Select</a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<p>
-			@loc4.Name
-			<br />
-			@loc4.Address
-			<br />
-			@loc4.Rating
-			<br />
-			@loc4.Description
-			<br />
-			@loc4.ImageLink
-		</p>
-
-		<img src=@loc4.ImageLink />
-
-		<br />
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-2">
-		<div class="form-group">
-			<a asp-action="Confirm" asp-route-locId="@loc5.LocationId" class="btn btn-default">Select</a>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<p>
-			@loc5.Name
-			<br />
-			@loc5.Address
-			<br />
-			@loc5.Rating
-			<br />
-			@loc5.Description
-			<br />
-			@loc5.ImageLink
-		</p>
-
-		<img src=@loc5.ImageLink />
-
-		<br />
-	</div>
+	<a class="left carousel-control" href="#selectCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#selectCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	</a>
 </div>
