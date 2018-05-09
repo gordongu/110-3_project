@@ -35,5 +35,7 @@ Project Description: <br/>
   <br/>
   <br/>
   The project repository contains folders in the root for meeting minutes and milestone submissions.  The HTML and Project Files directories contain extra documents we needed.  The Wanderlist directory contains the Visual Studio solution, and can be opened in Visual Studio 2013 or higher, with ASP.NET Core installed.<br/>
-  The project is built using the built-in toolchain that comes with Visual Studio. Debug and Release are the two default configurations, no compiled binary is tracked by github.<br>/
+  <br/>
+  The project is built using the built-in toolchain that comes with Visual Studio. Debug and Release are the two default configurations, no compiled binary is tracked by github.<br/>
+  <br/>
   Our project is hosted on Heroku with a manual rebuild and redeploy option.
