@@ -19,7 +19,7 @@ Coding language we used: <br/>
 <br/>
 Coding environment we used <br/>
   Visual Studios <br/>
-    - Visual Studios Community (Free) <br/>
+    - Visual Studio Community (Free) <br/>
 <br/>
 We made: <br/>
   - A web app <br/>
@@ -32,3 +32,8 @@ Project Description: <br/>
   To ensure a user's selections are  saved, user id's are made with a sign up page, and tracked with a login page. This way, if a user passes on a locaiton, they will not see it again. Furthermore at anytime a user can check what locations they have saved, by goign to the Saved Locations page. <br/>
   
   Each location is saved as a database entry. The images for the locations are manually taken from Google image search results.
+  <br/>
+  <br/>
+  The project repository contains folders in the root for meeting minutes and milestone submissions.  The HTML and Project Files directories contain extra documents we needed.  The Wanderlist directory contains the Visual Studio solution, and can be opened in Visual Studio 2013 or higher, with ASP.NET Core installed.<br/>
+  The project is built using the built-in toolchain that comes with Visual Studio. Debug and Release are the two default configurations, no compiled binary is tracked by github.<br>/
+  Our project is hosted on Heroku with a manual rebuild and redeploy option.
