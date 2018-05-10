@@ -42,4 +42,3 @@ Project Description: <br/>
   <br/>
   Our project is hosted on Heroku with a manual rebuild and redeploy option.
   
-  
