@@ -1,6 +1,8 @@
 # 110-3_project
 
 ### Project Name: Wanderlist <br/>
+Link to application: https://wanderlist-test.herokuapp.com/
+
 <br/>
  Team Memebers: <br/>
  Sudo Project Manager: <br/>
@@ -39,3 +41,5 @@ Project Description: <br/>
   The project is built using the built-in toolchain that comes with Visual Studio. Debug and Release are the two default configurations, no compiled binary is tracked by github.<br/>
   <br/>
   Our project is hosted on Heroku with a manual rebuild and redeploy option.
+  
+  
